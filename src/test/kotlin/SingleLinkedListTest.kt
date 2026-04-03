@@ -4,11 +4,11 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
 class SinglyLinkedListTest {
-    private lateinit var list: SinglyLinkedList
+    private lateinit var list: SinglyLinkedList<Int>
 
     @BeforeEach
     fun setUp() {
-        list = SinglyLinkedList()
+        list = SinglyLinkedList<Int>()
     }
 
     @Test
