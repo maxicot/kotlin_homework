@@ -150,7 +150,8 @@ class SinglyLinkedListTest {
         list.add(1)
         list.add(2)
         list.add(3)
+        val new_list: List<Int> = list.iterator().toList()
 
-        assertEquals(list.iterator().toList<Int>().toIntArray(), [1, 2, 3])
+        assertEquals(new_list.toIntArray(), [1, 2, 3])
     }
 }
