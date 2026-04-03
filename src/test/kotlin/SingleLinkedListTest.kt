@@ -150,14 +150,14 @@ class SinglyLinkedListTest {
         list.add(1)
         list.add(2)
         list.add(3)
-        var iter = list.iterator()
+        /*var iter = list.iterator()
 
         val array = buildArray {
             while (iter.hasNext()) {
                 add(iter.next())
             }
-        }
+            }*/
 
-        assertEquals(array.toIntArray(), [1, 2, 3])
+        assertEquals(list.toTypedArray(), [1, 2, 3])
     }
 }
