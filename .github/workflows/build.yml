@@ -1,0 +1,28 @@
+name: build and test
+on: push
+
+env:
+    GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx4096M -Dorg.gradle.daemon=false -Dorg.gradle.parallel=true -Dorg.gradle.caching=true"
+
+jobs:
+    build_and_test:
+        name: build and test
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Gradle setup
+              uses: ./.github/actions/gradle-setup
+
+            - name: Build project
+              run: ./gradlew build
+
+            - name: Run tests
+              run: ./gradlew test
+
+            - name: Upload test reports
+              uses: actions/upload-artifact@v4
+              with:
+                  name: test-reports
+                  path: "**/build/reports/tests/"
