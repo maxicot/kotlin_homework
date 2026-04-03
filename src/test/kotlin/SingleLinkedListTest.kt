@@ -154,7 +154,7 @@ class SinglyLinkedListTest {
         var arr = mutableListOf<Int>()
 
         while (iter.hasNext()) {
-            arr.add(iter.next()
+            arr.add(iter.next())
         }
 
         assertEquals(arr.toIntArray(), [1, 2, 3])
