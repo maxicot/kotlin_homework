@@ -151,6 +151,6 @@ class SinglyLinkedListTest {
         list.add(2)
         list.add(3)
 
-        assertEquals(list.iterator().toList().toIntArray(), [1, 2, 3])
+        assertEquals(list.iterator().toList<Int>().toIntArray(), [1, 2, 3])
     }
 }
