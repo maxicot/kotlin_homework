@@ -154,7 +154,7 @@ class SinglyLinkedListTest {
 
         val array = buildArray {
             while (iter.hasNext()) {
-                add(iter.next()
+                add(iter.next())
             }
         }
 
