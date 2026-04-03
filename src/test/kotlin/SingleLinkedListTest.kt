@@ -124,7 +124,7 @@ class SinglyLinkedListTest {
         list.add(20)
         list.add(30)
 
-        assertEquals(2, list.indexOf(20))
+        assertEquals(1, list.indexOf(20))
     }
 
     @Test
@@ -157,6 +157,6 @@ class SinglyLinkedListTest {
             arr.add(iter.next())
         }
 
-        assertEquals(arr.toIntArray(), intArrayOf(1, 2, 3))
+        assertArrayEquals(arr.toIntArray(), intArrayOf(1, 2, 3))
     }
 }
