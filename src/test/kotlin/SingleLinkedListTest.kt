@@ -157,6 +157,6 @@ class SinglyLinkedListTest {
             arr.add(iter.next())
         }
 
-        assertEquals(arr.toIntArray(), [1, 2, 3])
+        assertEquals(arr.toIntArray(), intArrayOf(1, 2, 3))
     }
 }
