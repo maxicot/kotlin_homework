@@ -15,8 +15,8 @@ jobs:
             - name: Gradle setup
               uses: ./.github/actions/gradle-setup
 
-            - name: Build project
-              run: ./gradlew build
+            #- name: Build project
+            #  run: ./gradlew build
 
             - name: Run tests
               run: ./gradlew test
