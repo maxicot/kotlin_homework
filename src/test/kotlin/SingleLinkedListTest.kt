@@ -150,14 +150,13 @@ class SinglyLinkedListTest {
         list.add(1)
         list.add(2)
         list.add(3)
-        /*var iter = list.iterator()
+        var iter = list.iterator()
+        var arr = mutableListOf<Int>()
 
-        val array = buildArray {
-            while (iter.hasNext()) {
-                add(iter.next())
-            }
-            }*/
+        while (iter.hasNext()) {
+            arr.add(iter.next()
+        }
 
-        assertEquals(list.iterator().toArray(), [1, 2, 3])
+        assertEquals(arr.toIntArray(), [1, 2, 3])
     }
 }
