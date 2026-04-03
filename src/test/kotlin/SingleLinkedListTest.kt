@@ -158,6 +158,6 @@ class SinglyLinkedListTest {
             }
             }*/
 
-        assertEquals(list.toTypedArray(), [1, 2, 3])
+        assertEquals(list.iterator().toArray(), [1, 2, 3])
     }
 }
